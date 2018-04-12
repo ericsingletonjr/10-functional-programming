@@ -36,12 +36,16 @@ var app = app || {};
       })
   };
 
+
   Article.numWordsAll = () => {
-    return Article.all.map().reduce()
+    return Article.all.map((words, i) => Article.all[i].body.split(' ').length).reduce((acc, curr) => acc + curr)
   };
 
   Article.allAuthors = () => {
-    return Article.all.map().reduce();
+    return Article.all.map((authors, i) => Article.all[i].author.reduce((acc, curr) => {
+      if(acc.indexOf(curr)=== -1) acc.push(curr)
+      return acc
+    }, []));
   };
 
   Article.numWordsByAuthor = () => {
