@@ -6,7 +6,7 @@ const fs = require('fs');
 const express = require('express');
 const PORT = process.env.PORT || 3000;
 const app = express();
-const conString = '';
+const conString = 'postgres://localhost:5432/lab10functional';
 const client = new pg.Client(conString);
 client.connect();
 client.on('error', err => {
@@ -14,7 +14,7 @@ client.on('error', err => {
 });
 
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:true}));
 app.use(express.static('./public'));
 
 app.get('/new', (request, response) => response.sendFile('new.html', {root: './public'}));
