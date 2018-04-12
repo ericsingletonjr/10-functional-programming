@@ -19,7 +19,7 @@
 04-11-2018 5:55pm - Set up and connect sql database
 04-11-2018 7:25pm - Wrapped in IFFE, got things to show yay
 04-11-2018 9:25pm - chained together map and reduce methods to count words in articles and produce array of unique author names
-04-11-2018 5:50pm - Set up the repo, created code base for the lab
+04-12-2018 1:27pm - Created the correct chain to retreive word count by author
 04-11-2018 5:50pm - Set up the repo, created code base for the lab
 04-11-2018 5:50pm - Set up the repo, created code base for the lab
 

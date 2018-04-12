@@ -49,7 +49,14 @@ var app = app || {};
   };
 
   Article.numWordsByAuthor = () => {
-    return Article.allAuthors().map(author => {})
+    return Article.allAuthors().map(authors => {
+      return {
+        author: authors,
+        authorTotal: Article.all.filter(author => {
+          if(author.author === authors) return author})
+          .map(words => words.body.split(' ').length).reduce((acc,curr) => acc + curr)
+      }
+    });
   };
 
   Article.truncateTable = callback => {
