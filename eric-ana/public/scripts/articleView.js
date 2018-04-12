@@ -1,8 +1,13 @@
 'use strict';
 var app = app || {};
 
+<<<<<<< HEAD
 (function(module) {
 
+=======
+
+(function(module) {
+>>>>>>> 18362326beaa7ebc72700aed487b66fa82fff24c
   var articleView = {};
   articleView.populateFilters = () => {
     $('article').each(function() {
@@ -30,6 +35,7 @@ var app = app || {};
       } else {
         $('article').fadeIn();
         $('article.template').hide();
+<<<<<<< HEAD
       }
       $('#category-filter').val('');
     });
@@ -44,6 +50,22 @@ var app = app || {};
         $('article').fadeIn();
         $('article.template').hide();
       }
+=======
+      }
+      $('#category-filter').val('');
+    });
+  };
+
+  articleView.handleCategoryFilter = () => {
+    $('#category-filter').on('change', function() {
+      if ($(this).val()) {
+        $('article').hide();
+        $(`article[data-category="${$(this).val()}"]`).fadeIn();
+      } else {
+        $('article').fadeIn();
+        $('article.template').hide();
+      }
+>>>>>>> 18362326beaa7ebc72700aed487b66fa82fff24c
       $('#author-filter').val('');
     });
   };
@@ -132,6 +154,7 @@ var app = app || {};
   };
 
   articleView.initAdminPage = () => {
+<<<<<<< HEAD
 
   // REVIEW: We use .forEach() here because we are relying on the side-effects of the callback function: appending to the DOM. The callback is not required to return anything.
     app.Article.numWordsByAuthor().forEach(stat => $('.author-stats').append(template(stat)));
@@ -142,3 +165,17 @@ var app = app || {};
   };
   module.articleView = articleView;
 })(app);
+=======
+  
+  // REVIEW: We use .forEach() here because we are relying on the side-effects of the callback function: appending to the DOM. The callback is not required to return anything.
+    app.Article.numWordsByAuthor().forEach(stat => $('.author-stats').append(template(stat)));
+
+    // REVIEW: Simply write the correct values to the page:
+    $('#blog-stats .articles').text(app.Article.all.length);
+    $('#blog-stats .words').text(app.Article.numWordsAll());
+  };
+
+  module.articleView = articleView
+
+})(window)
+>>>>>>> 18362326beaa7ebc72700aed487b66fa82fff24c
