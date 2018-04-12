@@ -16,6 +16,12 @@
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples: -->
 
 04-11-2018 5:50pm - Set up the repo, created code base for the lab
+04-11-2018 5:55pm - Set up and connect sql database
+04-11-2018 5:50pm - Set up the repo, created code base for the lab
+04-11-2018 5:50pm - Set up the repo, created code base for the lab
+04-11-2018 5:50pm - Set up the repo, created code base for the lab
+04-11-2018 5:50pm - Set up the repo, created code base for the lab
+04-11-2018 5:50pm - Set up the repo, created code base for the lab
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
