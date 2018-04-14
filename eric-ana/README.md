@@ -16,6 +16,11 @@
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples: -->
 
 04-11-2018 5:50pm - Set up the repo, created code base for the lab
+04-11-2018 5:55pm - Set up and connect sql database
+04-11-2018 7:25pm - Wrapped in IFFE, got things to show yay
+04-11-2018 9:25pm - chained together map and reduce methods to count words in articles and produce array of unique author names
+04-12-2018 1:27pm - Created the correct chain to retreive word count by author
+04-11-2018 6:10pm - Added template for admin page, properly showing
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
